@@ -1,9 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import HomePage from 'Homepage.component';
 
 function App() {
-  return <div className="App">App</div>;
+  return (
+    <div className="App">
+      <HomePage />
+    </div>
+  );
 }
 
 export default App;
