@@ -13,6 +13,7 @@ pages/
 /homepage/Homepage.component.jsx , Hompage.styles.scss
 /shop/shop.component.jsx, shop.styles.scss
 /sign-in-and-sign-up/sign-in-and-sign-up.component.jsx, sign-in-and-sign-up.scss
+/form-input/form-input.component.jsx/form-input.styles.scss
 
 components/
 /directory / directory.component.jsx , directory.styles.scss
