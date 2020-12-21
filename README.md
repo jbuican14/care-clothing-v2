@@ -12,6 +12,7 @@ update\*\*
 pages/
 /homepage/Homepage.component.jsx , Hompage.styles.scss
 /shop/shop.component.jsx, shop.styles.scss
+/sign-in-and-sign-up/sign-in-and-sign-up.component.jsx, sign-in-and-sign-up.scss
 
 components/
 /directory / directory.component.jsx , directory.styles.scss
@@ -19,3 +20,4 @@ components/
 /collection-preview/collection-preview.component.jsx, collection-preview.styles.scss
 /collection-item/collection-item.component.jsx, collection-item.styles.scss
 /header/header.component.jsx/ header.styles.scss
+/sign-in/sign-in.component.jsx, sign-in.styles.scss
