@@ -8,13 +8,16 @@ npm install react-router-dom
 
 - Hompage -> homepage.component.jsx , -> Homepage.styles.scss
 
-update\*\*
+# update\*\*
+
 pages/
 /homepage/Homepage.component.jsx , Hompage.styles.scss
 /shop/shop.component.jsx, shop.styles.scss
 /sign-in-and-sign-up/sign-in-and-sign-up.component.jsx, sign-in-and-sign-up.scss
 /form-input/form-input.component.jsx/form-input.styles.scss
+/custom-button/custom-button.componenet.jsx, custom-button.styles.scss
 
+=========
 components/
 /directory / directory.component.jsx , directory.styles.scss
 /menu-item / menu-item.compoenent.jsx, menu-item.component.scss
