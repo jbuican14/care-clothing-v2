@@ -1,8 +1,9 @@
 # E-commerce with React
 
-Npm ->
+Npm package ->
 exception installation for sass is : npm install node-sass@4.14.1
 npm install react-router-dom
+npm install --save redux-logger redux react-redux
 
 # Project Structure
 
@@ -30,3 +31,9 @@ components/
 # firebase
 
 firebase/firebase.utils.js
+
+#redux
+/root-reducer.js
+/user/user.reducer.js
+/user.action.js
+/store.js
