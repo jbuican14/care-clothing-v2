@@ -25,6 +25,7 @@ components/
 /collection-item/collection-item.component.jsx, collection-item.styles.scss
 /header/header.component.jsx/ header.styles.scss
 /sign-in/sign-in.component.jsx, sign-in.styles.scss
+/sign-up/sign-up.component.jsx, sign-up.styles.scss
 
 # firebase
 
