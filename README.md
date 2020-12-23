@@ -37,10 +37,15 @@ firebase/firebase.utils.js
 
 #redux
 /root-reducer.js
-/user/user.reducer.js
+/user/
+-/user.reducer.js
 -/user.action.js
 -/user.types.js
-/cart/cart.reducer.js
+
+/cart/
+-/cart.reducer.js
 -/cart.action.js
 -/cart.types.js
+-/cart.utils.js
+
 /store.js
