@@ -29,6 +29,7 @@ components/
 /sign-up/sign-up.component.jsx, sign-up.styles.scss
 
 /cart-icon/cart-icon.component.jsx, cart-item.styles.scss
+/cart-dropdown/cart-dropdown.component.jsx, cart-dropdown.styles.scss
 
 # firebase
 
