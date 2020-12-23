@@ -28,6 +28,8 @@ components/
 /sign-in/sign-in.component.jsx, sign-in.styles.scss
 /sign-up/sign-up.component.jsx, sign-up.styles.scss
 
+/cart-icon/cart-icon.component.jsx, cart-item.styles.scss
+
 # firebase
 
 firebase/firebase.utils.js
