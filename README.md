@@ -28,7 +28,7 @@ components/
 /sign-in/sign-in.component.jsx, sign-in.styles.scss
 /sign-up/sign-up.component.jsx, sign-up.styles.scss
 
-/cart-icon/cart-icon.component.jsx, cart-item.styles.scss
+/cart-icon/cart-icon.component.jsx, cart-icon.styles.scss
 /cart-dropdown/cart-dropdown.component.jsx, cart-dropdown.styles.scss
 
 # firebase
@@ -38,5 +38,9 @@ firebase/firebase.utils.js
 #redux
 /root-reducer.js
 /user/user.reducer.js
-/user.action.js
+-/user.action.js
+-/user.types.js
+/cart/cart.reducer.js
+-/cart.action.js
+-/cart.types.js
 /store.js
