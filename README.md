@@ -18,6 +18,7 @@ pages/
 /sign-in-and-sign-up/sign-in-and-sign-up.component.jsx, sign-in-and-sign-up.scss
 /form-input/form-input.component.jsx/form-input.styles.scss
 /custom-button/custom-button.componenet.jsx, custom-button.styles.scss
+/checkout/ checkout.component.jsx, checkout.styles.scss
 
 =========
 components/
