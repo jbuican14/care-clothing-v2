@@ -10,6 +10,13 @@
   background: #fff;
   right: 0;
   z-index: 5;
+  font-family: 'Kalam', cursive;
+
+  .empty-message {
+    font-size: 18px;
+    margin: 40px auto;
+    font-family: inherit;
+  }
 
   .cart-items {
     height: 295px;
@@ -20,6 +27,6 @@
 
   button {
     margin-top: auto;
-    font-family: 'Kalam', cursive;
+    font-family: inherit;
   }
 }
