@@ -4,6 +4,7 @@ Npm package ->
 exception installation for sass is : npm install node-sass@4.14.1
 npm install react-router-dom
 npm install --save redux-logger redux react-redux
+npm install reselect
 
 # Project Structure
 
@@ -30,6 +31,7 @@ components/
 
 /cart-icon/cart-icon.component.jsx, cart-icon.styles.scss
 /cart-dropdown/cart-dropdown.component.jsx, cart-dropdown.styles.scss
+/cart-item/cart-item.component.jsx/ cart-item.styles.scss
 
 # firebase
 
