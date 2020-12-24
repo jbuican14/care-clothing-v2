@@ -37,7 +37,8 @@ components/
 
 firebase/firebase.utils.js
 
-#redux
+# redux
+
 /root-reducer.js
 /user/
 -/user.reducer.js
