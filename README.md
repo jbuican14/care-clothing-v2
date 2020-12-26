@@ -44,6 +44,14 @@ firebase/firebase.utils.js
 # redux
 
 /root-reducer.js
+/directory
+-/directory.reducer.js
+-/directory.selector.js
+
+/shop
+-/shop.reducer.js
+-/shop.data.js
+
 /user/
 -/user.reducer.js
 -/user.action.js
