@@ -36,6 +36,7 @@ components/
 /cart-item/cart-item.component.jsx, cart-item.styles.scss
 
 /checkout-item/checkout-item.component.jsx , checkout-item.styles.scss
+/collection-overview/collection-overview.component.jsx, collection-overview.styles.scss
 
 # firebase
 
