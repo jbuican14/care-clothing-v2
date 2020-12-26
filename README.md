@@ -5,6 +5,7 @@ exception installation for sass is : npm install node-sass@4.14.1
 npm install react-router-dom
 npm install --save redux-logger redux react-redux
 npm install reselect
+npm install redux-persist (ex. localStorage ideal)
 
 # Project Structure
 
