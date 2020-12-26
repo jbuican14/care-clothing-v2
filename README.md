@@ -32,7 +32,9 @@ components/
 
 /cart-icon/cart-icon.component.jsx, cart-icon.styles.scss
 /cart-dropdown/cart-dropdown.component.jsx, cart-dropdown.styles.scss
-/cart-item/cart-item.component.jsx/ cart-item.styles.scss
+/cart-item/cart-item.component.jsx, cart-item.styles.scss
+
+/checkout-item/checkout-item.component.jsx , checkout-item.styles.scss
 
 # firebase
 
