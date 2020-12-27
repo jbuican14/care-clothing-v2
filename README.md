@@ -7,6 +7,7 @@ npm install --save redux-logger redux react-redux
 npm install reselect
 npm install redux-persist (ex. localStorage ideal)
 npm install lodash.memoize
+npm install react-stripe-checkout
 
 # Project Structure
 
@@ -73,6 +74,9 @@ components/
 
 /collection-overview
 -/collection-overview.component.jsx, collection-overview.styles.scss
+
+/stripe-button
+-/stripe-button.component.jsx, stripe-button.styles.scss
 
 # firebase
 
