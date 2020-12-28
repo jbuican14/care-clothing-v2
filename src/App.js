@@ -34,7 +34,7 @@ class App extends React.Component {
       } else {
         setCurrentUser(user);
       }
-      console.log(user);
+      // console.log(user);
     });
   }
 
