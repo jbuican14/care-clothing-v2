@@ -94,6 +94,8 @@ firebase/firebase.utils.js
 -/shop.reducer.js
 -/shop.data.js
 -/shop.selector.js
+-/shop.types.js
+-/shop.action.js
 
 /user/
 -/user.reducer.js
