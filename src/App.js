@@ -19,8 +19,6 @@ import {
 import { selectCurrentUser } from 'redux/user/user.selectors';
 import { setCurrentUser } from 'redux/user/user.action';
 
-import { selectCollectionsForPreview } from 'redux/shop/shop.selector';
-
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
