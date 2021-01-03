@@ -22,10 +22,6 @@ class ShopPage extends React.Component {
   componentDidMount() {
     const { updateCollections } = this.props;
     const collectionRef = firestore.collection('collections');
-    // collectionRef.onSnapshot(async (snapshot) => {
-    //   const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-    //   console.log(collectionsMap);
-    // });
 
     //should move to Redux
     collectionRef.get().then((snapshot) => {
@@ -41,23 +37,8 @@ class ShopPage extends React.Component {
     const CollectionsOverviewWithSpinner = WithSpinner(CollectionOverview);
     const CollectionPageWithSpinner = WithSpinner(CollectionPage);
 
-    console.log(CollectionsOverviewWithSpinner);
-    console.log(CollectionPageWithSpinner);
     return (
       <div className="shop-page">
-        {/* <Route
-          exact
-          path={`${match.path}`}
-          render={(props) => (
-            <CollectionOverviewWithSpinner isLoading={loading} {...props} />
-          )}
-        />
-        <Route
-          path={`${match.path}/:collectionId`}
-          render={(props) => (
-            <CollectionPageWithSpinner isLoading={loading} {...props} />
-          )}
-        /> */}
         <Route
           exact
           path={`${match.path}`}
