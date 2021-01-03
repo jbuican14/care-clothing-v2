@@ -27,6 +27,7 @@ class ShopPage extends React.Component {
     //   console.log(collectionsMap);
     // });
 
+    //should move to Redux
     collectionRef.get().then((snapshot) => {
       const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
       updateCollections(collectionsMap);

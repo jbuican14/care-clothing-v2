@@ -9,6 +9,7 @@ npm install redux-persist (ex. localStorage ideal)
 npm install lodash.memoize
 npm install react-stripe-checkout
 npm install styled-components
+npm install --save redux-thunk
 
 # Project Structure
 
