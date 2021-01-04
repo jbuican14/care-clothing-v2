@@ -37,7 +37,7 @@ pages/
 -/checkout.component.jsx, checkout.styles.scss
 
 /collection
--/collection.componenet.jsx, collection.styles.scss
+-/collection.componenet.jsx, collection.styles.scss, collection.container.jsx
 
 =========
 components/
@@ -48,7 +48,7 @@ components/
 -/menu-item.compoenent.jsx, menu-item.component.scss
 
 /collection-preview
--/collection-preview.component.jsx, collection-preview.styles.scss
+-/collection-preview.component.jsx, collection-preview.styles.scss, collection-preview.container.jsx
 
 /collection-item
 -/collection-item.component.jsx, collection-item.styles.scss
