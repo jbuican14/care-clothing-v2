@@ -10,6 +10,7 @@ npm install lodash.memoize
 npm install react-stripe-checkout
 npm install styled-components
 npm install --save redux-thunk
+npm install redux-saga
 
 # Project Structure
 
@@ -87,6 +88,7 @@ firebase/firebase.utils.js
 # redux
 
 /root-reducer.js
+/root-saga.js
 /directory
 -/directory.reducer.js
 -/directory.selector.js
@@ -97,6 +99,7 @@ firebase/firebase.utils.js
 -/shop.selector.js
 -/shop.types.js
 -/shop.action.js
+-/shop.sagas.js
 
 /user/
 -/user.reducer.js
