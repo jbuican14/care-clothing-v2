@@ -49,7 +49,6 @@ export const addCollectionAndDocuments = async (
   objectsToAdd
 ) => {
   const collectionRef = firestore.collection(collectionKey);
-  // console.log(collectionRef);
   const batch = firestore.batch();
   objectsToAdd.forEach((obj) => {
     const newDocRef = collectionRef.doc();
@@ -75,6 +74,15 @@ export const convertCollectionsSnapshotToMap = (collections) => {
     accum[collection.title.toLowerCase()] = collection;
     return accum;
   }, {});
+};
+
+export const getCurrentUser = () => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
+      unsubscribe();
+      resolve(userAuth);
+    }, reject);
+  });
 };
 
 export default firebase;

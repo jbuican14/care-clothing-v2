@@ -105,6 +105,7 @@ firebase/firebase.utils.js
 -/user.reducer.js
 -/user.action.js
 -/user.types.js
+-/user.sagas.js
 
 /cart/
 -/cart.reducer.js
