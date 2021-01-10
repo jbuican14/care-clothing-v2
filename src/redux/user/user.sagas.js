@@ -5,6 +5,8 @@ import {
   signInFailure,
   signOutSuccess,
   signOutFailure,
+  signUpSuccess,
+  signUpFailure,
 } from 'redux/user/user.action';
 import {
   auth,
@@ -13,13 +15,11 @@ import {
   getCurrentUser,
 } from 'firebase/firebase.utils';
 
-export function* getSnapshotFromUserAuth(userAuth) {
+export function* getSnapshotFromUserAuth(userAuth, otherData) {
   try {
-    const userRef = yield call(createUserProfileDocument, userAuth);
+    const userRef = yield call(createUserProfileDocument, userAuth, otherData);
     const userSnapshot = yield userRef.get();
     yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() }));
-
-    console.log(userRef);
   } catch (err) {
     yield put(signInFailure(err));
   }
@@ -51,6 +51,26 @@ export function* signInWithEmail({ payload: { email, password } }) {
   }
 }
 
+export function* onSignUpSuccess() {
+  yield takeLatest(UserActionTypes.SIGN_UP_SUCCESS, signInAferSignUp);
+}
+
+export function* signInAferSignUp({ payload: { user, additionalData } }) {
+  yield getSnapshotFromUserAuth(user, additionalData);
+}
+export function* signUp({ payload: { displayName, email, password } }) {
+  try {
+    // yield console.log(email, password, displayName);
+    const { user } = yield auth.createUserWithEmailAndPassword(email, password);
+    yield put(signUpSuccess({ user, additionalData: { displayName } }));
+    yield getSnapshotFromUserAuth(user);
+
+    // yield getSnapshotFromUserAuth(user, { displayName });
+  } catch (err) {
+    yield put(signUpFailure(err));
+  }
+}
+
 function* isUserAuthenticated() {
   try {
     const userAuth = yield getCurrentUser();
@@ -78,11 +98,18 @@ export function* onSignOutStart() {
   yield takeLatest(UserActionTypes.SIGN_OUT_START, signOut);
 }
 
+export function* onSignUpStart() {
+  yield console.log('signUp START ---> ');
+  yield takeLatest(UserActionTypes.SIGN_UP_START, signUp);
+}
+
 export function* userSagas() {
   yield all([
     call(onGoogleSignInStart),
     call(onEmailSignInStart),
     call(onCheckUserSession),
     call(onSignOutStart),
+    call(onSignUpStart),
+    call(onSignUpSuccess),
   ]);
 }
